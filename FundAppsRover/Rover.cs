@@ -23,6 +23,7 @@ namespace FundAppsRover
         public int YCoordinate { get; set; }
         public string DirectionFacing { get; set; }
         public List<IRover> Moves { get; set; }
+        Obstacles obstacle = new Obstacles();
 
         private static readonly char MessageSeperator = ' ';
 
@@ -37,6 +38,8 @@ namespace FundAppsRover
             this.XCoordinate = Convert.ToInt32(roverPositionMsgSplit[xCoordinateIdx]);
             this.YCoordinate = Convert.ToInt32(roverPositionMsgSplit[yCoordinateIdx]);
             this.DirectionFacing = roverPositionMsgSplit[facingDirectionIdx];
+
+ 
         }
 
         public static class Commands
@@ -82,6 +85,12 @@ namespace FundAppsRover
             {
                 case Facing.North:
                     this.YCoordinate += 1;
+                    if (obstacle.olist().Contains(XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing))
+                    {
+                        Console.WriteLine("Grid has obstacle at " + XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing);
+                        MoveRoverForward();
+                    }
+
                     break;
 
                 case Facing.East:
