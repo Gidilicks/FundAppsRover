@@ -95,14 +95,29 @@ namespace FundAppsRover
 
                 case Facing.East:
                     this.XCoordinate += 1;
+                    if (obstacle.olist().Contains(XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing))
+                    {
+                        Console.WriteLine("Grid has obstacle at " + XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing);
+                        MoveRoverForward();
+                    }
                     break;
 
                 case Facing.South:
                     this.YCoordinate -= 1;
+                    if (obstacle.olist().Contains(XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing))
+                    {
+                        Console.WriteLine("Grid has obstacle at " + XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing);
+                        MoveRoverForward();
+                    }
                     break;
 
                 case Facing.West:
                     this.XCoordinate -= 1;
+                    if (obstacle.olist().Contains(XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing))
+                    {
+                        Console.WriteLine("Grid has obstacle at " + XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing);
+                        MoveRoverForward();
+                    }
                     break;
             }
         }
@@ -113,18 +128,38 @@ namespace FundAppsRover
             {
                 case Facing.North:
                     this.YCoordinate -= 1;
+                    if (obstacle.olist().Contains(XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing))
+                    {
+                        Console.WriteLine("Grid has obstacle at " + XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing);
+                        MoveRoverForward();
+                    }
                     break;
 
                 case Facing.East:
                     this.XCoordinate -= 1;
+                    if (obstacle.olist().Contains(XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing))
+                    {
+                        Console.WriteLine("Grid has obstacle at " + XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing);
+                        MoveRoverForward();
+                    }
                     break;
 
                 case Facing.South:
                     this.YCoordinate += 1;
+                    if (obstacle.olist().Contains(XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing))
+                    {
+                        Console.WriteLine("Grid has obstacle at " + XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing);
+                        MoveRoverForward();
+                    }
                     break;
 
                 case Facing.West:
                     this.XCoordinate += 1;
+                    if (obstacle.olist().Contains(XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing))
+                    {
+                        Console.WriteLine("Grid has obstacle at " + XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing);
+                        MoveRoverForward();
+                    }
                     break;
             }
         }
@@ -160,18 +195,38 @@ namespace FundAppsRover
             {
                 case Facing.North:
                     this.DirectionFacing = Facing.West;
+                    if (obstacle.olist().Contains(XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing))
+                    {
+                        Console.WriteLine("Grid has obstacle at " + XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing);
+                        MoveRoverForward();
+                    }
                     break;
 
                 case Facing.West:
                     this.DirectionFacing = Facing.South;
+                    if (obstacle.olist().Contains(XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing))
+                    {
+                        Console.WriteLine("Grid has obstacle at " + XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing);
+                        MoveRoverForward();
+                    }
                     break;
 
                 case Facing.South:
                     this.DirectionFacing = Facing.East;
+                    if (obstacle.olist().Contains(XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing))
+                    {
+                        Console.WriteLine("Grid has obstacle at " + XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing);
+                        MoveRoverForward();
+                    }
                     break;
 
                 case Facing.East:
                     this.DirectionFacing = Facing.North;
+                    if (obstacle.olist().Contains(XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing))
+                    {
+                        Console.WriteLine("Grid has obstacle at " + XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing);
+                        MoveRoverForward();
+                    }
                     break;
             }
         }
@@ -182,18 +237,38 @@ namespace FundAppsRover
             {
                 case Facing.North:
                     this.DirectionFacing = Facing.East;
+                    if (obstacle.olist().Contains(XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing))
+                    {
+                        Console.WriteLine("Grid has obstacle at " + XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing);
+                        MoveRoverForward();
+                    }
                     break;
 
                 case Facing.East:
                     this.DirectionFacing = Facing.South;
+                    if (obstacle.olist().Contains(XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing))
+                    {
+                        Console.WriteLine("Grid has obstacle at " + XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing);
+                        MoveRoverForward();
+                    }
                     break;
 
                 case Facing.South:
                     this.DirectionFacing = Facing.West;
+                    if (obstacle.olist().Contains(XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing))
+                    {
+                        Console.WriteLine("Grid has obstacle at " + XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing);
+                        MoveRoverForward();
+                    }
                     break;
 
                 case Facing.West:
                     this.DirectionFacing = Facing.North;
+                    if (obstacle.olist().Contains(XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing))
+                    {
+                        Console.WriteLine("Grid has obstacle at " + XCoordinate.ToString() + " " + YCoordinate.ToString() + " " + DirectionFacing);
+                        MoveRoverForward();
+                    }
                     break;
             }
         }
