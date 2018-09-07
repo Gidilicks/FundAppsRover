@@ -42,8 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ILandingSurface.cs" />
+    <Compile Include="IRover.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rover.cs" />
+    <Compile Include="Rovers.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
